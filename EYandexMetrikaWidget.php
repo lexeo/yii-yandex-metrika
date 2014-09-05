@@ -119,10 +119,10 @@ class EYandexMetrikaWidget extends CWidget
      */
     public function run()
     {
-        if (!is_numeric($this->id) || $this->id <= 0) {
-            throw new CException('YandexMetrika ID is invalid. Please check the configuration options.');
-        }
         if ($this->enabled) {
+            if (!is_numeric($this->id) || $this->id <= 0) {
+                throw new RuntimeException('YandexMetrika ID is invalid. Please check the configuration options.');
+            }
             $viewFilename = dirname(__FILE__) .'/views/'
                 . (!$this->informer ? ($this->async ? 'async' : 'simple') : 'informer') .'.php';
             $this->renderFile($viewFilename);
