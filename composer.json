@@ -1,14 +1,18 @@
 {
-  "name" : "yii-yandex-metrika",
-  "description": "Simple Yii widget to add YandexMetrika counter/informer on web-page",
-  "keywords": ["yii", "extension", "yandex", "metrika"],
-  "version" : "0.1",
-  "require" : {
-    "php" : ">=5.1.0",
-    "yiisoft/yii" : "*"
-  },
-  "repositories" : [ {
-    "type" : "git",
-    "url" : "https://github.com/lexeo/yii-yandex-metrika"
-  } ]
+    "name": "lexeo/yii-yandex-metrika",
+    "description": "Simple Yii widget to add YandexMetrika counter/informer on web-page",
+    "keywords": ["yii", "extension", "yandex", "metrika"],
+    "version": "0.1",
+    "authors": [{
+        "name": "Alexey Grishatkin",
+        "email": "lexeodev@gmail.com"
+    }],
+    "require": {
+        "php": ">=5.1.0",
+        "yiisoft/yii": "*"
+    },
+    "repositories": [{
+        "type": "git",
+        "url": "https://github.com/lexeo/yii-yandex-metrika"
+    }]
 }
