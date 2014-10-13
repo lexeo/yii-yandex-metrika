@@ -2,14 +2,14 @@
     "name": "lexeo/yii-yandex-metrika",
     "description": "Simple Yii widget to add YandexMetrika counter/informer on web-page",
     "keywords": ["yii", "extension", "yandex", "metrika"],
-    "version": "0.1",
+    "version": "0.1.1",
     "authors": [{
         "name": "Alexey Grishatkin",
         "email": "lexeodev@gmail.com"
     }],
     "require": {
         "php": ">=5.1.0",
-        "yiisoft/yii": "*"
+        "yiisoft/yii": "1.1.*"
     },
     "repositories": [{
         "type": "git",

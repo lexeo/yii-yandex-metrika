@@ -5,7 +5,7 @@
  * @link https://metrika.yandex.ru/
  *
  * @author Alexey "Lexeo" Grishatkin
- * @version 0.1 (2014-09-04)
+ * @version 0.1.1 (2014-09-04)
  */
 class EYandexMetrikaWidget extends CWidget
 {
@@ -196,7 +196,7 @@ class EYandexMetrikaWidget extends CWidget
     public function setInformerDataType($value)
     {
         $allowed = array(self::INFORMER_DATA_PAGEVIEWS, self::INFORMER_DATA_UNIQUES, self::INFORMER_DATA_VISITS);
-        if (!in_array($value, array($allowed))) {
+        if (!in_array($value, $allowed)) {
             throw new InvalidArgumentException('Unsupported "informerDataType" given. Please check the allowed values.');
         }
         $this->informerDataType = $value;
